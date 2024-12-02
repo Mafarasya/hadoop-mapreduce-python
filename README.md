@@ -23,10 +23,10 @@ project-folder/
 2. Jalankan hadoop streaming:
     ``` 
     !$HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-3.2.3.jar \
-    -input /word_count_with_python/pembukaan_uud1945.txt \
-    -output /word_count_with_python/output \
-    -mapper "python /content/mapper.py" \
-    -reducer "python /content/reducer.py"
+        -input /word_count_with_python/pembukaan_uud1945.txt \
+        -output /word_count_with_python/output \
+        -mapper "python /content/mapper.py" \
+        -reducer "python /content/reducer.py"
     ```
 3. Salin hasil output ke lokal:
     ```
